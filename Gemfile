@@ -5,10 +5,13 @@ ruby "2.6.3"
 
 gem "bcrypt"
 gem "bootsnap", ">= 1.1.0", require: false
+gem "bootstrap-sass", "3.4.1"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "figaro"
+gem "i18n"
 gem "jbuilder", "~> 2.5"
+gem "jquery-rails"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.3"
 gem "sass-rails", "~> 5.0"

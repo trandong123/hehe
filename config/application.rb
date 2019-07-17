@@ -16,5 +16,7 @@ module FoodDelivery
   class Application < Rails::Application
     config.load_defaults 5.2
     config.generators.system_tests = nil
+    config.i18n.default_locale = :en
+    config.i18n.available_locales = [:en, :vi]
   end
 end

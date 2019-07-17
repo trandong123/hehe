@@ -1,0 +1,25 @@
+<div class="modal fade" id="loginModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+
+      <div class="modal-body">
+        <%= form_for :session, url: login_path do |f| %>
+          <%= f.text_field :username, placeholder: t("sessions.new.username") %>
+          <%= f.password_field :password, placeholder: t("sessions.new.password") %>
+          <%= f.label :remember_me, class: "checkbox inline" do %>
+          <%= f.check_box :remember_me %>
+          <span><%=t "sessions.new.remember" %></span>
+        <% end %>
+        <%= f.submit t "sessions.new.login" %>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
