@@ -3,11 +3,16 @@ en:
     users:
       register:
         create:
-          info: "Your account successfully registered !!!"
+          info: "Please check your email to activate your account."
         find_user: "Can not find this user"
-      sessions:
-        create:
-          danger: Invalid email/password combination
+    sessions:
+      create:
+        message: "Account not activated. Check your email for the
+        activation link."
+        danger: "Invalid email/password combination"
+    account_activations:
+      success: "Account activated!"
+      danger: "Invalid activation link!"
   users:
     new:
       register: "Register"
@@ -42,3 +47,11 @@ en:
       password: "Password"
       remember: "Remember me on this computer"
       login: "Login"
+  layouts:
+    login: "Login"
+    close: "Close"
+  user_mailer:
+    account_activation:
+      hi: "Hi"
+      activate: "Activation"
+      welcome: "Welcome to the Delivery Food! Click on the link below to activate your account:"

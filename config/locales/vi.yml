@@ -2,8 +2,16 @@ vi:
   controllers:
     users:
       register:
-        create: "Tài khoản của bạn đã đăng ký thành công !!!"
+        create:
+          info: "Tài khoản của bạn đã đăng ký thành công !!!"
         find_user: "Không thể tìm thấy người dùng này"
+    sessions:
+      create:
+        message: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để biết liên kết kích hoạt."
+        danger: "Email/mật khẩu không hợp lệ"
+    account_activations:
+      success: "Tài khoản đã được kích hoạt!"
+      danger: "Liên kết kích hoạt không hợp lệ!"
   users:
     new:
       register: "Đăng ký"
@@ -38,3 +46,11 @@ vi:
       password: "Mật khẩu"
       remember: "Lưu tài khoản"
       login: "Đăng nhập"
+  layouts:
+    login: "Đăng nhập"
+    close: "Đóng"
+  mailers:
+    account_activations:
+      hi: "Xin chào"
+      activate: "Kích hoạt tài khoản"
+      welcome: "Chào mừng bạn tới với Delivery Food! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"

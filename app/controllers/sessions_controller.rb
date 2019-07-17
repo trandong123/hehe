@@ -4,9 +4,15 @@ class SessionsController < ApplicationController
   def create
     @user = User.find_by username: params[:session][:username].downcase
     if @user&.authenticate(params[:session][:password])
-      log_in @user
-      remember_user
-      redirect_to @user
+      if @user.activated?
+        log_in @user
+        remember_user
+        redirect_to @user
+      else
+        message = t "controllers.users.sessions.create.message"
+        flash[:warning] = message
+        redirect_to root_path
+      end
     else
       flash.now[:danger] = t "controllers.users.sessions.create.danger"
       render :new

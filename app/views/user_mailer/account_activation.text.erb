@@ -1,0 +1,8 @@
+<h1>Delivery Food</h1>
+
+<p><%= t ".hi" %> <%= @email[:user_name] %>,</p>
+
+<p><%= t ".welcome" %></p>
+
+<%= link_to t(".activate"),
+  edit_account_activation_url(@email[:activation_token], email: @email[:mail]) %>
