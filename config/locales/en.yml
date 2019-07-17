@@ -1,2 +1,44 @@
 en:
-  hello: "Hello world"
+  controllers:
+    users:
+      register:
+        create:
+          info: "Your account successfully registered !!!"
+        find_user: "Can not find this user"
+      sessions:
+        create:
+          danger: Invalid email/password combination
+  users:
+    new:
+      register: "Register"
+      name: "Name"
+      email: "Email"
+      username: "Username"
+      password: "Password"
+      comfirmation: "Password comfirmation"
+      address: "Address"
+      phone_number: "Phone number"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "Name can't be blank"
+            email:
+              blank: "Email can't be blank"
+            password:
+              blank: "Password can't be blank"
+              too_short: "Password too short"
+            password_confirmation:
+              confirmation: "Password does not match"
+  shared:
+    error_messages:
+      message: "The form contains "
+      error: " errors"
+  sessions:
+    new:
+      username: "Username"
+      password: "Password"
+      remember: "Remember me on this computer"
+      login: "Login"

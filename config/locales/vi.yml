@@ -1,0 +1,40 @@
+vi:
+  controllers:
+    users:
+      register:
+        create: "Tài khoản của bạn đã đăng ký thành công !!!"
+        find_user: "Không thể tìm thấy người dùng này"
+  users:
+    new:
+      register: "Đăng ký"
+      name: "Tên"
+      email: "Email"
+      username: "Tên đăng nhập"
+      password: "Mật khẩu"
+      comfirmation: "Xác nhận mật khẩu"
+      address: "Địa chỉ"
+      phone_number: "Số điện thoại"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "Tên không được để trống"
+            email:
+              blank: "Email không được để trống"
+            password:
+              blank: "Mật khẩu không được để trống"
+              too_short: "Mật khẩu quá ngắn"
+            password_confirmation:
+              confirmation: "Mật khẩu không trùng khớp"
+  shared:
+    error_messages:
+      message: "Form của bạn có "
+      error: " lỗi"
+  sessions:
+    new:
+      username: "Tên tài khoản"
+      password: "Mật khẩu"
+      remember: "Lưu tài khoản"
+      login: "Đăng nhập"
